@@ -1,0 +1,124 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fef8f5; /* Soft peach background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     /* Ensures wrapping for long strings */
+  }
+  /* Contact Form Container */
+  .contact-form {
+    background: #fff; /* White background */
+    padding: 20px 30px;
+    border-radius: 12px; /* Soft rounded corners */
+    box-shadow: 1px 1px 10px #42182c, -1px -1px 20px #42182c;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 8px;
+    width: 90%; /* Use most of the screen width */
+    max-width: 500px; /* Restrict maximum width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  /* Hover Animation for Form */
+  .contact-form:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Input Fields */
+  .contact-form .form-control {
+    width: 100%;
+    border: 1px solid #ffe6e0; /* Soft border */
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    background-color: #fffaf8; /* Soft light background */
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    
+  }
+  
+  /* Focus Effect for Input Fields */
+  .contact-form .form-control:focus {
+    box-shadow: 0 0 8px #42182c43;
+    outline: none;
+  }
+  
+  
+  
+  /* Placeholder Styling */
+  .contact-form .form-control::placeholder {
+    font-size: 14px;
+    color: #b3b3b3;
+  }
+  
+  /* Help Text Styling */
+  .contact-form .form-text {
+    font-size: 12px;
+    color: #999;
+  }
+  
+  /* Submit Button */
+  .contact-form .send {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(135deg, #42182c, #42182cc0); /* Gradient button */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover Animation for Button */
+  .contact-form .send:hover {
+    background: linear-gradient(135deg, #42182cc0, #42182c);
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 400px) {
+    .contact-form {
+        width: 330px;
+    }
+    #title{
+        font-size:30px;
+        font-weight:400;
+    }
+
+  }
+  @media screen and (max-width: 768px) {
+    .contact-form {
+      padding: 15px 20px;
+    }
+  
+    .contact-form .form-control {
+      font-size: 14px;
+      padding: 8px 10px;
+    }
+  
+    .contact-form .send {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,57 @@
+#remove {
+    color: #fff;
+    background-color: #d57e7f;
+    padding: 8px;
+    width: 150px;
+    /* margin-bottom: 30px; */
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 33px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, border 0.3s ease;
+}
+
+#remove:hover  {
+    background-color: #ffff;
+    color: #d57e7f;
+    border: 1px solid #d57e7f;
+    transform: scale(1.05);
+}
+#qte {
+    background-color: #ffff;
+    fill: #d57e7f;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 33px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, border 0.3s ease;
+
+}
+#qte:hover{
+   
+    transform: scale(1.05);
+}
+#checkout{
+    color: #fff;
+    background-color: #d57e7f;
+    padding: 8px;
+    width: 265px;
+    /* margin-bottom: 30px; */
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 33px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, border 0.3s ease;
+   
+}
+#checkout:hover  {
+    background-color: #ffff;
+    color: #d57e7f;
+    border: 1px solid #d57e7f;
+    transform: scale(1.05);
+}
+
+#form-check{
+    margin-inline: 200px ;
+}
+

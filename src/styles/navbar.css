@@ -1,0 +1,47 @@
+.navbar-brand{
+    /* position: absolute; */
+    margin-top: -15px;
+    left: 0;
+}
+ 
+.navbar{
+    justify-content: space-around;
+    
+}
+
+.nav-link {
+    color: #42182c;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 560px) {
+    .nav-link {
+      font-size: 18px; /* Adjust font size */
+      padding: 8px 16px; /* Adjust padding */
+      display: block; /* Ensure links are displayed as block elements */
+      text-align: center; /* Center align text */
+    }
+    
+    .navbar {
+      flex-direction: column; /* Stack navbar links vertically */
+      align-items: center; /* Center align items */
+    }
+  }
+  
+.nav-link + .cart {
+    color: #42182c;
+    text-decoration: none;
+    /* display: flex; */
+    transition: all 0.2s ease-in;
+    transform: scale(1.05);
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+    color: #f78da7;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
