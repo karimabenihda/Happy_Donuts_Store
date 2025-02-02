@@ -59,7 +59,7 @@ transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, bo
 
   
 #donuts_img{
-    box-shadow: 1px 1px 20px #42182c, -1px -1px 20px #42182c;
+    box-shadow: 1px 1px 40px #42182c, -1px -1px 40px #42182c;
     background-color: #42182c;
     /* box-shadow: 1px 1px 20px #d57e7f, -1px -1px 20px #d57e7f;
     background-color: #d57e7f; */

@@ -59,6 +59,7 @@ function DonutsList() {
                     src={donut.image}
                     alt={donut.name}
                     style={{ width: "200px", height: "200px" }}
+                    id='donuts_img'
                   />
                   <div className="card-body">
                     <h2 className="card-title">{donut.name}</h2>
