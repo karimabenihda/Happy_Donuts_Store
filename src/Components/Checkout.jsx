@@ -1,6 +1,7 @@
 import React from "react";
 import Swal from "sweetalert2";
 import "../styles/cart.css";
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 function Checkout() {
   const handleSubmit = (e) => {
@@ -147,6 +148,7 @@ function Checkout() {
           <button
             type="submit"
             id="checkout"
+            
           >
             Checkout
           </button><br /><br />

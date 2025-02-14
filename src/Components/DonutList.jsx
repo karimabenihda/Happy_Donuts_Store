@@ -15,9 +15,19 @@ function DonutsList() {
   const [cart, setCart] = useState([]);
 
   const addToCart = (donut) => {
-    // Add a new donut entry to the cart, always with qte: 1
-    setCart((prevCart) => [...prevCart, { ...donut, qte: 1 }]);
+    setCart((prevCart) => {
+      const existingDonut = prevCart.find((item) => item.id === donut.id);
+  
+      if (existingDonut) {
+        return prevCart.map((item) =>
+          item.id === donut.id ? { ...item, qte: item.qte + 1 } : item
+        );
+      } else {
+        return [...prevCart, { ...donut, qte: 1 }];
+      }
+    });
   };
+  
 
   const removeFromCart = (donutId) => {
     setCart((prevCart) => prevCart.filter((item) => item.id !== donutId));

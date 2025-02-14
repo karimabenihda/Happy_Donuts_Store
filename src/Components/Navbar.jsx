@@ -29,9 +29,10 @@ function Navbar() {
     <ScrollLink className='nav-link' style={{color:"#42182c" ,fontWeight:'bold',fontSize:'20px'}} to='contact' smooth={true} duration={200}>
         Contact     
     </ScrollLink>
-    <ScrollLink className='nav-link' to='cart' smooth={true} duration={200}>
-          <TiShoppingCart style={{color:"#42182c" ,height:'30px',width:'30px'}} className='cart' />
-    </ScrollLink>
+    {/* <ScrollLink className='nav-link' to='cart' smooth={true} duration={200}>
+      <TiShoppingCart style={{color:"#42182c" ,height:'30px',width:'30px'}} className='cart' />
+          </ScrollLink> */}
+   
 </nav>
 
 
